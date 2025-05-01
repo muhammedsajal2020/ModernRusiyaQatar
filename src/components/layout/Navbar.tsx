@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
             <div className="flex items-center space-x-2">
               {/* Updated logo path */}
               <img
-                src="./public/logo.svg"
+                src="/logo.svg"
                 alt="Modern Rusiya Logo"
                 className="h-8 w-8 object-contain"
                 onError={(e) => {
