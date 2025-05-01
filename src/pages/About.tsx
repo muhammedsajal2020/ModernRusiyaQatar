@@ -18,7 +18,7 @@ const About: React.FC = () => {
             <div>
               <SectionHeading
                 title="Our Story"
-                subtitle="Delivering quality building materials since 2010."
+                subtitle="Delivering quality building materials since 1993."
               />
               
               <p className="mb-4 text-slate-600">
@@ -42,7 +42,7 @@ const About: React.FC = () => {
               />
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary-500 rounded-lg hidden md:flex items-center justify-center">
                 <div className="text-center text-white">
-                  <span className="block text-3xl font-bold">15+</span>
+                  <span className="block text-3xl font-bold">32+</span>
                   <span className="block text-sm">Years</span>
                 </div>
               </div>
@@ -100,7 +100,7 @@ const About: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <Clock size={36} className="text-primary-600 mx-auto mb-4" />
-              <h4 className="text-2xl font-bold mb-1">15+</h4>
+              <h4 className="text-2xl font-bold mb-1">32+</h4>
               <p className="text-slate-600">Years of Experience</p>
             </div>
             
@@ -112,13 +112,13 @@ const About: React.FC = () => {
             
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <Users size={36} className="text-primary-600 mx-auto mb-4" />
-              <h4 className="text-2xl font-bold mb-1">10,000+</h4>
+              <h4 className="text-2xl font-bold mb-1">50,000+</h4>
               <p className="text-slate-600">Happy Customers</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <Target size={36} className="text-primary-600 mx-auto mb-4" />
-              <h4 className="text-2xl font-bold mb-1">1000+</h4>
+              <h4 className="text-2xl font-bold mb-1">10000+</h4>
               <p className="text-slate-600">Projects Completed</p>
             </div>
           </div>

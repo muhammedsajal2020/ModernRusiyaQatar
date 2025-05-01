@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="font-bold text-lg">Call Us</h3>
                     <p className="text-slate-600">
-                      +1 (555) 123-4567
+                      +97474496085
                     </p>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="font-bold text-lg">Email Us</h3>
                     <p className="text-slate-600">
-                      info@modernrusiya.com
+                    info@rusiyaqatar.com
                     </p>
                   </div>
                 </div>
@@ -100,9 +100,8 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="font-bold text-lg">Business Hours</h3>
                     <p className="text-slate-600">
-                      Monday-Friday: 8:00 AM - 6:00 PM<br />
-                      Saturday: 9:00 AM - 5:00 PM<br />
-                      Sunday: Closed
+                      Saturday-Thursday: 8:00 AM - 10:00 PM<br />
+                      Friday: Closed
                     </p>
                   </div>
                 </div>

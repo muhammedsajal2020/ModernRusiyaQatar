@@ -14,11 +14,7 @@ const AboutSection = () => {
       />
       Optional overlays can go here if needed
       {/* Example overlay box */}
-      {/* <div className="absolute top-[200px] left-[250px] w-[300px] h-[200px] bg-gray-200 opacity-80"></div>
-      <div className="absolute top-[150px] left-[300px] w-[200px] h-[200px] rotate-45 bg-slate-500 opacity-80"></div>
-      <div className="absolute top-[400px] left-[350px] w-[100px] h-[50px] bg-slate-400 opacity-90"></div>
-      <div className="absolute top-[250px] left-[350px] w-[100px] h-[100px] rounded-full bg-slate-600 opacity-90"></div> */}
-    </div>
+     </div>
   );
   
   
