@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { Menu, X, Building, ChevronRight } from 'lucide-react';
+import { Menu, X, ChevronRight } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,13 +42,22 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
             <div className="flex items-center space-x-2">
-              <Building size={32} className="text-primary-950" />
+              {/* Updated logo path */}
+              <img
+                src="./public/logo.svg"
+                alt="Modern Rusiya Logo"
+                className="h-8 w-8 object-contain"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                  console.warn('Logo failed to load at /logo');
+                }}
+              />
               <div>
                 <span className="font-display text-xl font-bold text-primary-950 block leading-tight">
-                  Modern Rusiya
+                  Modern Rusiya Gruop 
                 </span>
                 <span className="text-xs text-primary-800 font-medium block -mt-1">
-                  Building Materials
+                  The Perfect Building Partner
                 </span>
               </div>
             </div>

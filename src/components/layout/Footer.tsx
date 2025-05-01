@@ -13,10 +13,10 @@ const Footer: React.FC = () => {
               <Building size={28} className="text-white" />
               <div>
                 <span className="font-display text-lg font-bold text-white block leading-tight">
-                  Modern Rusiya
+                  Modern Rusiya Group
                 </span>
                 <span className="text-xs text-slate-300 font-medium block -mt-1">
-                  Building Materials
+                The Perfect Building Partner
                 </span>
               </div>
             </div>
@@ -115,11 +115,11 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="text-slate-400 mr-3" />
-                <span className="text-slate-300">+1 (555) 123-4567</span>
+                <span className="text-slate-300">+97474496085</span>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="text-slate-400 mr-3" />
-                <span className="text-slate-300">info@modernrusiya.com</span>
+                <span className="text-slate-300">info@rusiyaqatar.com</span>
               </li>
             </ul>
           </div>
