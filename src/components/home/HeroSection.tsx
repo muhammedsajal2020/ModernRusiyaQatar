@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1567266851-c63a19511634?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg2MnwwfDF8c2VhcmNofDJ8fGJ1aWxkaW5nJTIwY29tcGxldGV8ZW58MHx8fHwxNjQ2ODMyMzYx&ixlib=rb-1.2.1&q=80&w=1080"
-          alt="Modern Construction"
+          alt=" "
           className="w-full h-full object-cover scale-105 animate-pulse-slow"
         />
       </div>
