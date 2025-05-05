@@ -5,18 +5,51 @@ import { ArrowRight } from 'lucide-react';
 const HeroSection: React.FC = () => {
   return (
     <section className="relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-950/80 to-black/70 z-10"></div>
+      {/* Background - Simple dark overlay */}
+      <div className="absolute inset-0 bg-black/50 z-10"></div>
       
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt="Modern construction site"
+          src="https://images.unsplash.com/photo-1567266851-c63a19511634?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg2MnwwfDF8c2VhcmNofDJ8fGJ1aWxkaW5nJTIwY29tcGxldGV8ZW58MHx8fHwxNjQ2ODMyMzYx&ixlib=rb-1.2.1&q=80&w=1080"
+          alt="Modern Construction"
           className="w-full h-full object-cover scale-105 animate-pulse-slow"
         />
       </div>
       
+      {/* Moving Content Section */}
+      <div className="absolute bottom-20 left-0 z-20 w-full h-1/4">
+        <div className="animate-keywords">
+          <span className="text-white text-lg font-medium mx-5">
+            Building Materials
+          </span>
+          <span className="text-white text-lg font-medium mx-5">
+            Electrical Equipment
+          </span>
+          <span className="text-white text-lg font-medium mx-5">
+            Hand Tools
+          </span>
+          <span className="text-white text-lg font-medium mx-5">
+            Paints
+          </span>
+          <span className="text-white text-lg font-medium mx-5">
+            Plumbing Materials
+          </span>
+          <span className="text-white text-lg font-medium mx-5">
+            Power Tools
+          </span>
+          <span className="text-white text-lg font-medium mx-5">
+            Safety Equipment
+          </span>
+          <span className="text-white text-lg font-medium mx-5">
+            Tiles
+          </span>
+          
+          
+          
+        </div>
+      </div>
+
       {/* Content */}
       <div className="relative min-h-screen flex items-center z-20 pt-20">
         <div className="container-custom">
@@ -25,7 +58,8 @@ const HeroSection: React.FC = () => {
               Building the Future with Quality Materials
             </h1>
             <p className="text-xl text-slate-200 mb-8 max-w-xl">
-              Modern Rusiya Group provides premium construction materials for all your building needs, from foundation to finish.
+              Modern Rusiya Group provides premium construction materials for all your building needs, from foundation to finish. 
+              We supply everything from cement, tiles, paints, electrical equipment to power tools and safety gear.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link 
@@ -52,6 +86,34 @@ const HeroSection: React.FC = () => {
           <path fill="#f8fafc" fillOpacity="1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
         </svg>
       </div>
+
+      {/* CSS as style tag */}
+      <style dangerouslySetInnerHTML={{
+        __html: `
+          @keyframes move-keywords {
+            0% {
+              transform: translateX(-100%);
+            }
+            100% {
+              transform: translateX(100%);
+            }
+          }
+          .animate-keywords {
+            animation: move-keywords 20s linear infinite;
+            white-space: nowrap;
+            display: flex;
+            justify-content: flex-start;
+          }
+          .animate-keywords span {
+            margin-right: 50px;
+            font-size: 1.25rem;
+            color: #fff;
+            opacity: 0.8;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        `
+      }} />
     </section>
   );
 };
