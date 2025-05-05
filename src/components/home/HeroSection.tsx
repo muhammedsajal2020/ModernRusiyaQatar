@@ -8,12 +8,12 @@ const HeroSection: React.FC = () => {
       {/* Background - Simple dark overlay */}
       <div className="absolute inset-0 bg-black/50 z-10"></div>
       
-      {/* Background Image */}
-      <div className="absolute inset-0">
+      {/* Background Image - Portrait oriented */}
+      <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1567266851-c63a19511634?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg2MnwwfDF8c2VhcmNofDJ8fGJ1aWxkaW5nJTIwY29tcGxldGV8ZW58MHx8fHwxNjQ2ODMyMzYx&ixlib=rb-1.2.1&q=80&w=1080"
+          src="https://images.unsplash.com/photo-1617806118233-18e1de247200?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
           alt=" "
-          className="w-full h-full object-cover scale-105 animate-pulse-slow"
+          className="w-full h-full object-cover object-center scale-105 animate-pulse-slow"
         />
       </div>
       
@@ -44,9 +44,6 @@ const HeroSection: React.FC = () => {
           <span className="text-white text-lg font-medium mx-5">
             Tiles
           </span>
-          
-          
-          
         </div>
       </div>
 
@@ -58,9 +55,7 @@ const HeroSection: React.FC = () => {
               Building the Future with Quality Materials
             </h1>
             <p className="text-xl text-slate-200 mb-8 max-w-xl">
-              Modern Rusiya Group provides premium construction materials for all your building needs, from foundation to finish. 
-              We supply everything from cement, tiles, paints, electrical equipment to power tools and safety gear.
-            </p>
+              Modern Rusiya Group provides premium construction materials for all your building needs.</p>
             <div className="flex flex-wrap gap-4">
               <Link 
                 to="/products" 
