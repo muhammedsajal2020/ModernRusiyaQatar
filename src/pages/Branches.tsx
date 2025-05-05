@@ -17,11 +17,11 @@ const branches: Branch[] = [
   {
     id: "main-branch",
     name: "Main Branch - Headquarters",
-    address: "123 Construction Avenue, Building District, 12345",
-    phone: "+1 (555) 123-4567",
-    email: "main@modernrusiya.com",
-    hours: "Monday-Friday: 8am-6pm, Saturday: 9am-5pm",
-    image: "https://images.pexels.com/photos/162557/architecture-modern-building-sky-162557.jpeg?auto=compress&cs=tinysrgb&w=600"
+    address: "Birkat Al Awamer, Qatar",
+    phone: "+974 3129 4939",
+    email: "info@rusiyaqatart.com",
+    hours: "Monday-Sunday: 5am-10pm, Friday: 5am-10am, 4pm-10pm",
+    image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1080,h=790,fit=crop/YZ9bMZ3W9lu7ae4r/birkath-ALpobr9LVlHeXZoW.jpg"
   },
   {
     id: "north-branch",
