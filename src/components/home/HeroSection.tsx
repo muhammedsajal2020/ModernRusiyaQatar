@@ -1,18 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
+  const images = [
+    "https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80", // Stacked construction materials
+    "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"  // Close-up of building materials
+  ];
+
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative overflow-hidden">
       {/* Background - Simple dark overlay */}
       <div className="absolute inset-0 bg-black/50 z-10"></div>
       
-      {/* Background Image - Portrait oriented */}
+      {/* Background Image Slider */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1617806118233-18e1de247200?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
-          alt=" "
+          src={images[activeImageIndex]}
+          alt="Construction Materials"
           className="w-full h-full object-cover object-center scale-105 animate-pulse-slow"
         />
       </div>
@@ -55,7 +70,8 @@ const HeroSection: React.FC = () => {
               Building the Future with Quality Materials
             </h1>
             <p className="text-xl text-slate-200 mb-8 max-w-xl">
-              Modern Rusiya Group provides premium construction materials for all your building needs.</p>
+              Modern Rusiya Group provides premium construction materials for all your building needs.
+            </p>
             <div className="flex flex-wrap gap-4">
               <Link 
                 to="/products" 
@@ -82,7 +98,7 @@ const HeroSection: React.FC = () => {
         </svg>
       </div>
 
-      {/* CSS as style tag */}
+      {/* CSS for Animation */}
       <style dangerouslySetInnerHTML={{
         __html: `
           @keyframes move-keywords {
